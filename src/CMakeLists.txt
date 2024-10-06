@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.29)
+project(projectName)
+
+set(CMAKE_CXX_STANDARD 17)
+set(buildDir ${CMAKE_CURRENT_SOURCE_DIR}/../build/)
+set(EXECUTABLE_OUTPUT_PATH ${buildDir} CACHE PATH "Build directory" FORCE)
+set(LIBRARY_OUTPUT_PATH ${buildDir} CACHE PATH "Build directory" FORCE)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${buildDir})
+set(CMAKE_BUILD_FILES_DIRECTORY ${buildDir})
+set(CMAKE_BUILD_DIRECTORY ${buildDir})
+set(CMAKE_BINARY_DIR  ${buildDir})
+SET(EXECUTABLE_OUTPUT_PATH ${buildDir})
+SET(LIBRARY_OUTPUT_PATH ${buildDir}lib)
+SET(CMAKE_CACHEFILE_DIR ${buildDir})
+
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
