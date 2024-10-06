@@ -4,6 +4,17 @@
 - modify src/CMakeLists.txt as required
     - you will probably want to change the project name and maybe the CXX version
     - add whichever .cpp and .h files you need to compile
+- `chmod 744 buildScript.sh`
+- `./buildScript.sh` - you can use this to complie from now on, the previous steps were just for first time setup
+- now if you want to run your c++ program, type `src/<your project name here>` and it will execute your program
+- if you need to wipe some shit or like move your project to another directory, `rm build/* compile/*`
+
+
+### how to use if first way doesn't work
+- make sure you have cmake and make working correctly and at a decent version
+- modify src/CMakeLists.txt as required
+    - you will probably want to change the project name and maybe the CXX version
+    - add whichever .cpp and .h files you need to compile
 - go into the compile directory
 - run cmake ../src
     - this makes all the cmake stuff you need in your compile directory
